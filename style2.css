@@ -1,0 +1,367 @@
+#header{
+    border:1px solid black;
+    margin:10px;
+    padding:10px;
+    justify-content: center;
+    display:flex;
+}
+#header button{
+    border-radius: 50px;
+    background-color :teal;
+    color: white;
+    font-weight: 700;
+    padding:20px;
+    margin:10px;
+    cursor:pointer;
+
+}
+#header button:hover{
+    color: white;
+    transform: scale(1.05);
+
+
+}
+.textFile{
+    background-color: lightcoral;
+    color: white;
+    height: 120px;
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    display:  flex;
+    
+}
+.textFile div[purpose=name]{
+    text-decoration: underline;
+    margin-top: 90px;
+
+}
+.textFile [action]{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.textFile [action]:hover{
+    color: black;
+
+}
+
+.album{
+    background-color: cyan;
+    color: white;
+    height: 120px;
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    display:  flex;
+    
+}
+.album div[purpose=name]{
+    text-decoration: underline;
+    margin-top: 90px;
+
+}
+.album [action]{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.album [action]:hover{
+    color: black;
+
+}
+
+.folder{
+    background-color: teal;
+    color: white;
+    height: 120px;
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    display:  flex;
+    
+}
+.folder div[purpose=name]{
+    text-decoration: underline;
+    margin-top: 90px;
+
+}
+.folder [action]{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.folder [action]:hover{
+    color: black;
+
+}
+
+#breadCrumb{
+    border:1px solid black;
+    margin:10px;
+    display: flex;
+    
+}
+#breadCrumb a{
+    background-color: orange;
+    padding: 10px;
+    border-right: 10px solid black;
+    
+}
+#breadCrumb a:hover{
+background-color:  teal;
+text-decoration:  underline;
+}
+
+#divContainer{
+    border:1px solid black;
+    margin:10px;
+    padding:10px;
+    /* justify-content: center; */
+    display:flex;
+}
+.folder {
+    background-color: teal;
+    color:white;
+    height: 120px;
+    width: 150px;
+
+    margin: 10px;
+    padding: 10px;
+
+    border:2px solid red;
+    border-radius: 10px;
+}
+
+.folder div[purpose=name]{
+    margin-top: 80px;
+}
+
+.folder [action]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.folder [action]:hover {
+    color: blue;
+    transform: scale(1.05);
+}
+
+.text_file {
+    background-color: lightcoral;
+    color:white;
+    height: 120px;
+    width: 150px;
+
+    margin: 10px;
+    padding: 10px;
+
+    border:2px solid red;
+    border-radius: 10px;
+}
+
+.text_file div[purpose=name]{
+    margin-top: 80px;
+}
+
+.text_file [action]{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text_file [action]:hover {
+    color: blue;
+    transform: scale(1.05);
+}
+
+
+#app{
+    border:3px solid blue;
+    margin:10px;
+    
+}
+#app_title_bar{
+    display: flex;
+    background-color: cyan;
+    height:40px;
+    justify-content: center;
+    display: flex;
+
+}
+#app_title{
+    width: 94%;
+    text-align: center;
+    border-right: 5px solid red;
+}
+
+#app_menu_bar{
+    display: flex;
+    background-color: teal;
+    height: 50px;
+}
+#app_body{
+    display: flex;
+    background-color: springgreen;
+    height: 500px;
+}
+.notepad_body{
+    height: 100%;
+    width:100%;
+
+}
+.notepad_body textArea{
+    height: 100%;
+    width:100%;
+}
+
+
+.notepad_menu *{
+    margin: 0px 5px;
+    padding :2px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.notepad_menu span {
+    vertical-align: bottom;
+    border: 1px solid white;
+    padding: 1.5px;
+    border-radius: 5px;
+}
+.notepad_menu span {
+    vertical-align: bottom;
+}
+.notepad_menu span:hover {
+    vertical-align: bottom;
+    border: 2px solid black;
+    background-color: white;
+    color: teal;
+    transform: scale(1.05);
+}
+.notepad_menu input[type=color]{
+width:20px;
+height: 20px;
+}
+.notepad_menu{
+    width: 100%;
+    padding: 5px;
+}
+.notepad_menu select{
+    height: 30px;
+}
+.notepad_menu span{
+    width:20px;
+    height: 20px;
+}
+.notepad_body{
+    height: 100%;
+}
+.notepad_menu [pressed=true]{
+    border: 2px solid black;
+    background-color: white;
+    color: teal;
+
+}
+
+
+[purpose=download]{
+    display: none;
+}
+.notepad_menu input[action=upload]{
+display: none
+}
+
+.notepad_menu input[type=file]{
+width: 50px;
+height: 20px;
+}
+#win_actions span{
+    cursor: pointer;
+}
+#win_actions span:hover{
+    color: blue;
+}
+.notepad_menu input[action=upload]{
+    display: none;
+}
+.album-menu * {
+    margin: 0px 5px;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    vertical-align: middle;
+    
+}
+.album-menu span{
+    vertical-align: bottom;
+}
+.album-menu span:hover{
+    color: teal;
+    background-color: coral;
+    border: 2px solid black;
+}
+
+.album-body{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+.picture-list{
+    border: 1 px solid black;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    background-color: coral;
+}
+.picture-list img{
+    height: 90%;
+    border: 2px solid teal;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.picture-list img:hover{
+    transform: scale(1.1);
+    border: 2px solid blue;
+}
+.picture-list img[pressed=true]{
+    transform: scale(1.05);
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px red;
+}
+.picture-view{
+    border: 5 px solid black;
+    height: 350px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+.picture-view > div{
+    height: 100%;
+    border: 3px solid black;
+
+}
+.picture-view .move-left{
+width: 15%;
+}
+.picture-view .picture-main{
+    padding: 5px;
+    width: 70%;
+    display: flex;
+}
+.picture-view .picture-main img{
+    height: 100%;
+}
+.picture-view .move-right{
+    width: 15%;
+}

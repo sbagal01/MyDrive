@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vanilla Front End Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <div id="header">
+        <button id="addNewFolder">Add new Folder</button>
+        <button id="addTextFile">Add Text File</button>
+        <button id="addAlbumFile">Add Album</button>
+    </div>
+    <div id="breadCrumb">
+       <a purpose="path" rid="-1">Root</a>
+    </div>
+    <div id="divContainer">
+    </div>
+    <div id="app">
+        <div id="app_title_bar">
+            <div id="app_title"> Title will come here</div>
+            <div id="win_actions">
+                <span class="material-icons">minimize</span>
+                <span class="material-icons">fullscreen</span>
+                <span id="close-app" class="material-icons">close</span> 
+            </div>
+        </div>
+        
+        <div id="app_menu_bar"></div>
+        <div id="app_body"></div> 
+    </div>
+
+    <template id="mytemplates">
+        <div class="folder" rtype="folder" rid="" pid="">
+            <span action="rename"> Rename</span>
+            <span action="view"> View</span>
+            <span action="delete"> Delete</span>
+            <div purpose="name"></div>      
+        </div>
+        <div class="textFile" rtype="text_file" rid="" pid="">
+            <span action="rename"> Rename</span>
+            <span action="view"> View</span>
+            <span action="delete"> Delete</span>
+            <div purpose="name"></div>      
+        </div>
+        <div class="album" rtype="albumFile" rid="" pid="">
+            <span action="rename"> Rename</span>
+            <span action="view"> View</span>
+            <span action="delete"> Delete</span>
+            <div purpose="name"></div>      
+        </div>
+        <div >
+            <a purpose="path" rid="-1"></a>
+
+            <div purpose="notepad_menu" class="notepad_menu">
+                <span  pressed="save" action="save" class="material-icons">
+                    save
+                    </span>
+                    <span  pressed=false action="italic" class="material-icons">
+                        format_italic
+                        </span>
+                        <span pressed=false action="bold" class="material-icons">
+                            format_bold
+                            </span>
+                            <span pressed=false action="underline" class="material-icons">
+                                format_underlined
+                                </span>
+                <input type="color" action="bg-color" />
+                <input type="color" action="fg-color" />
+                <select action="font-family">
+                    <option value="monospace"> Monospace </option>
+                    <option value="serif"> Serif </option>
+                    <option value="sans-serif"> Sans-Serif </option>
+                    <option value="cursive"> Cursive </option>
+                </select>
+                <select action="font-size">
+                    <option value="8"> 8 </option>
+                    <option value="10"> 10 </option>
+                    <option value="12"> 12</option>
+                    <option value="16"> 16 </option>
+                    <option value="20"> 20 </option>
+                    <option value="22"> 22 </option>
+                    <option value="24"> 24</option>
+                    <option value="28"> 28 </option>
+                </select>
+                <span action="download" class="material-icons">
+                    file_download
+                    </span>
+                    <span action="forupload" class="material-icons">
+                        file_upload
+                        </span>
+                <input action="upload" type="file" />
+                <a purpose="download" href="https://www.google.com">Link</a>
+            </div>
+            <div purpose="notepad_body" class="notepad_body">
+                <textArea>i am the notepad Body</textArea>
+            </div>
+            <div purpose="album-menu" class="album-menu">
+                <!-- <span action="save" class="material-icons">save</span>
+                <span action="add" class="material-icons">save</span>
+                <span action="remove" class="material-icons">save</span>
+                <span action="left" class="material-icons">save</span>
+                <span action="right" class="material-icons">save</span>
+                <span action="download" class="material-icons">download</span>
+                <span action="upload" class="material-icons">upload</span> -->
+
+
+            <span action="save" class="material-icons">save</span>
+            <span action="download" class="material-icons">download</span>
+            <span action="upload" class="material-icons">upload</span>
+            
+            <span action="add" class="material-icons">add</span>
+            <span action="delete" class="material-icons">delete</span>
+            <span action="left" class="material-icons">keyboard_double_arrow_left</span>
+            <span action="right" class="material-icons">keyboard_double_arrow_right</span>
+
+            <span action="play" class="material-icons">play_arrow</span>
+            <span action="pause" class="material-icons">pause</span>
+            </div>
+            
+            <div purpose="album-body" class="album-body">
+                <div class="picture-list">
+
+                <!-- <img src="https://thumbs.dreamstime.com/b/picturesque-autumn-scenery-santa-maddalena-village-church-road-colorful-trees-meadows-foreground-mountain-peaks-159426189.jpg"/>
+                <img src="https://rukminim1.flixcart.com/image/416/416/poster/h/j/n/beautiful-scenery-fabulous-ps1840-small-original-imadyyt7xw4tr2y5.jpeg?q=70"/> -->
+                </div>
+            
+            <div class="picture-view">
+                <div class="move-left">
+                    <span action="left" class="material-icons">keyboard_double_arrow_left</span>
+                </div>
+                
+                <div class="picture-main">
+                    <img src="" alt="Please enter an image"/>
+
+                </div>    
+
+                <div class="move-right">   
+                    <span action="right" class="material-icons">keyboard_double_arrow_right</span>
+                </div>     
+            </div>
+                
+            
+
+            </div>
+
+        </div>
+    </template>
+    <script type="text/javascript" src="main2.js"></script>
+</body>
+</html>
